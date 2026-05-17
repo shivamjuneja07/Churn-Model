@@ -1,6 +1,6 @@
 # Customer Churn Prediction with Neural Networks
 
-A complete machine learning project to predict customer churn for a telecom company. Built with Keras, scikit-learn, and pandas on a dataset of 7,043 customers.
+A complete machine learning project to predict customer churn for a telecom company.
 
 ---
 
@@ -49,29 +49,9 @@ churn-project/
 
 ---
 
-## How to Run
-
-**1. Clone the repository and install dependencies.**
-
-```bash
-git clone https://github.com/yourusername/churn-prediction.git
-cd churn-prediction
-pip install -r requirements.txt
-```
-
-**2. Run the full pipeline.**
-
-```bash
-python churn_model.py
-```
-
-This will run EDA, train the model, print metrics, and save all figures to `outputs/figures/`.
-
----
-
 ## Dataset
 
-The dataset contains 7,043 telecom customers with 21 features covering demographics, account details, and service subscriptions.
+The dataset contains telecom customers with 21 features covering demographics, account details, and service subscriptions.
 
 | Feature | Type | Description |
 |---|---|---|
@@ -147,25 +127,3 @@ The model outputs a churn probability for every customer, which gets bucketed in
 Focusing retention spend on the high-risk tier means fewer wasted calls and better ROI on retention campaigns.
 
 ---
-
-## Requirements
-
-```
-pandas
-numpy
-scikit-learn
-tensorflow
-matplotlib
-seaborn
-```
-
-See `requirements.txt` for pinned versions.
-
----
-
-## Next Steps
-
-- Add SHAP values to explain individual predictions
-- Try gradient boosting (XGBoost) as a comparison model
-- Build a simple API endpoint with FastAPI to score new customers
-- Add a time-based train/test split to simulate real deployment conditions
